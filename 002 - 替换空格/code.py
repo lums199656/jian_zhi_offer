@@ -1,8 +1,10 @@
 def replaceSpace(s):
     list_ = list(s)
     for (index, item) in enumerate(list_):
+        print(index, item)
         if item == " ":
             list_[index] = '%20'
+            print(list_)
     return "".join(list_)
 
 
